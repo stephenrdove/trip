@@ -2,6 +2,8 @@ import React from 'react';
 
 export const Test = 'Hello'
 
+const apiKey = 'AIzaSyAQanW19-11Nqln22IfAe-zQLppJ9lFd1M';
+
 const Item = (props) => {
     return (
         <li>
@@ -31,6 +33,19 @@ class Itinerary extends React.Component {
             <div>
                 <form onSubmit={e => {
                     e.preventDefault();
+
+                    const url = `https://www.googleapis.com/customsearch/v1?key=${apiKey}&q=test`;
+
+                    // fetch(url, {
+
+                    // }).then(response => {
+                    //     console.log(response);
+                    //     return response.json();
+                    // })
+                    // .then(json => {
+                    //     console.log(json);
+                        
+                    // });
 
                     this.addDestination(this._input.value)
                     this._input.value = ''
