@@ -3,3 +3,18 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+.itinerary-container{ 
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+}
+.list{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.map{
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+}
