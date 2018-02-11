@@ -14,11 +14,11 @@ class App extends Component {
           <h1 className="App-title">Welcome to Trip</h1>
         </header>
         <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
+          Where shall we go?
         </p>
         <div className='itinerary-container'>
           <div className='list'>
-            'THIS IS WHERE THE TEXT GOES'
+            THIS IS WHERE THE TEXT GOES
             <Itinerary widget={"Test"} />
           </div>
           <div className='map'>

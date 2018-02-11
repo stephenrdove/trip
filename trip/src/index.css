@@ -17,4 +17,5 @@ body {
   display: flex;
   flex-direction: column;
   flex: 2;
+  margin-right: 1rem;
 }
