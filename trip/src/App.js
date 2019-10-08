@@ -5,8 +5,10 @@ import './App.css';
 import Itinerary, { Test } from './itinerary/Itinerary';
 import Map from './map/Map';
 
+const apiKey = 'AIzaSyA9O2LK0b3E7n-21E73qthzFinwsXV3XAU';
+
 class App extends Component {
-  render() {
+  render() { 
     return (
       <div className="App">
         <header className="App-header">
@@ -18,13 +20,13 @@ class App extends Component {
         </p>
         <div className='itinerary-container'>
           <div className='list'>
-            THIS IS WHERE THE TEXT GOES
+            Where would you like to go?
             <Itinerary widget={"Test"} />
           </div>
           <div className='map'>
             <Map
               isMarkerShown
-              googleMapURL="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places"
+              googleMapURL={`https://maps.googleapis.com/maps/api/js?key=${apiKey}&v=3.exp&libraries=geometry,drawing,places`}
               loadingElement={<div style={{ height: `100%` }} />}
               containerElement={<div style={{ height: `400px` }} />}
               mapElement={<div style={{ height: `100%` }} />}
